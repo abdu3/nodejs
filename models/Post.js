@@ -17,5 +17,5 @@ const PostSchema=new Schema({
     UserId:{
         type:Schema.Types.ObjectId,ref:"User"
     }
-})
-module.exports=mongoose.model("Posr",PostSchema)
+},{Collection: "User", versionKey:false})
+module.exports=mongoose.model("Post",PostSchema)

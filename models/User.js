@@ -18,5 +18,17 @@ const UserSchema =new Schema({
         required:true,
         unique:true
     }
-})
-module.exports=mongoose.model('User',UserSchema)
+}
+// , {Collection: "User", versionKey:false}
+)
+  module.exports=mongoose.model("User",UserSchema);
+
+
+// module.exports= User = [
+//     {title: 'george' , id: 1},
+//     {title: 'josh' , id: 2},
+//     {title: 'tyler' , id: 3},
+//     {title: 'alice' , id: 4},
+//     {title: 'candice' , id: 5}
+
+// ]
